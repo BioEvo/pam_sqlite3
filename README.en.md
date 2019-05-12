@@ -21,8 +21,8 @@ This module provides support for authenticating with SQLite for OpenVPN.
 # 0 = No encryption  
 # 1 = md5  
 # 2 = sha1  
-auth        required    pam_sqlite3.so db=/etc/openvpn/openvpn.db table=t_user user=username passwd=password active=1 expire=expire crypt=1
-account     required    pam_sqlite3.so db=/etc/openvpn/openvpn.db table=t_user user=username passwd=password active=1 expire=expire crypt=1
+auth        required    pam_sqlite3.so db=/etc/openvpn/openvpn.db table=t_user user=username passwd=password expire=expire crypt=1
+account     required    pam_sqlite3.so db=/etc/openvpn/openvpn.db table=t_user user=username passwd=password expire=expire crypt=1
 ```
 
 
